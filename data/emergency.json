@@ -1,0 +1,76 @@
+{
+  "hospitals": [
+    {
+      "name": "中部德洲會醫院",
+      "address": "沖繩市照屋3-20-1",
+      "has_pediatrics": true,
+      "phone": "098-932-1111"
+    },
+    {
+      "name": "縣立北部醫院",
+      "address": "名護市大中2-12-3",
+      "has_pediatrics": true,
+      "phone": "0980-52-2719"
+    },
+    {
+      "name": "那霸市立醫院",
+      "address": "那霸市古島2-31-1",
+      "has_pediatrics": true,
+      "phone": "098-884-5111"
+    },
+    {
+      "name": "南部德洲會醫院",
+      "address": "八重瀨町外間171-1",
+      "has_pediatrics": true,
+      "phone": "098-998-0011"
+    },
+    {
+      "name": "浦添綜合醫院",
+      "address": "浦添市伊祖4-16-1",
+      "has_pediatrics": false,
+      "phone": "098-878-0231"
+    }
+  ],
+  "pharmacies": [
+    { "name": "大國藥妝 (ダイコクドラッグ)", "note": "國際通、美國村都有分店，常見退燒藥、腸胃藥" },
+    { "name": "AEON內部藥局", "note": "AEON北谷附設，有藥劑師可諮詢" },
+    { "name": "マツモトキヨシ (松本清)", "note": "那霸國際通2間，品項齊全可退稅" },
+    { "name": "ツルハドラッグ", "note": "58號線沿路有多間，營業時間長" }
+  ],
+  "cards": [
+    {
+      "chinese": "我的孩子發燒了。",
+      "japanese": "子供が熱を出しました。",
+      "romaji": "Kodomo ga netsu o dashimashita."
+    },
+    {
+      "chinese": "請問小兒科在哪裡？",
+      "japanese": "小児科はどこですか？",
+      "romaji": "Shounika wa doko desu ka?"
+    },
+    {
+      "chinese": "孩子肚子痛。",
+      "japanese": "子供がお腹が痛いです。",
+      "romaji": "Kodomo ga onaka ga itai desu."
+    },
+    {
+      "chinese": "需要叫救護車。",
+      "japanese": "救急車を呼んでください。",
+      "romaji": "Kyuukyuusha o yonde kudasai."
+    },
+    {
+      "chinese": "這裡有會說中文的人嗎？",
+      "japanese": "中国語ができる人はいますか？",
+      "romaji": "Chuugokugo ga dekiru hito wa imasuka?"
+    },
+    {
+      "chinese": "孩子過敏了（起疹子）。",
+      "japanese": "子供にアレルギー反応が出ました。",
+      "romaji": "Kodomo ni arerugii hannou ga demashita."
+    }
+  ],
+  "contacts": [
+    { "type": "警察", "number": "110" },
+    { "type": "救護車/消防", "number": "119" }
+  ]
+}

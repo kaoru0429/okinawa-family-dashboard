@@ -1,0 +1,68 @@
+[
+  {
+    "id": "kouri-island",
+    "name": "古宇利島 / 古宇利大橋",
+    "region": "北部",
+    "description": "風景絕佳，適合帶孩子在海灘玩水。古宇利大橋全長約2公里，可眺望翡翠綠的海面。",
+    "has_parking": true,
+    "has_nursing_room": false,
+    "kid_friendly": 5,
+    "ticket_info": "免費",
+    "easy_tip": "走完橋後停在橋頭停車場，海灘就在旁邊，讓小朋友踩踩沙、看看海就好，不必環島一圈。旁邊有攤販賣蝦蝦飯可以當午餐。"
+  },
+  {
+    "id": "churaumi",
+    "name": "美麗海水族館",
+    "region": "北部",
+    "description": "家庭必備行程，室內推車友善，有「黑潮之海」超大水槽。",
+    "has_parking": true,
+    "has_nursing_room": true,
+    "kid_friendly": 5,
+    "ticket_info": "大人¥2180 / 6歲未滿免費",
+    "easy_tip": "帶幼童建議只看「黑潮之海」大水槽 + 海豚劇場（免費），全程不超過1.5小時。16:00 後門票有折扣。園區入口有嬰兒車租借。"
+  },
+  {
+    "id": "okinawa-zoo",
+    "name": "沖繩兒童王國",
+    "region": "中部",
+    "description": "親近動物與體驗科學，有小動物觸摸區。",
+    "has_parking": true,
+    "has_nursing_room": true,
+    "kid_friendly": 5,
+    "ticket_info": "大人¥500 / 兒童¥100",
+    "easy_tip": "直接前往「觸摸廣場」讓小孩摸天竺鼠、兔子就很開心，旁邊有休息室和自販機。科學館有冷氣很適合避暑休息。"
+  },
+  {
+    "id": "american-village",
+    "name": "美國村",
+    "region": "中部",
+    "description": "購物與看夕陽，有多處休息區。AEON 北谷就在附近。",
+    "has_parking": true,
+    "has_nursing_room": true,
+    "kid_friendly": 4,
+    "ticket_info": "免費",
+    "easy_tip": "傍晚 17:00 後去，看夕陽 + 逛 AEON 買晚餐和消耗品，摩天輪¥500 小孩會很興奮但排隊通常不長。不用特地逛很多店。"
+  },
+  {
+    "id": "naminoue",
+    "name": "波上宮 / 波之上海灘",
+    "region": "那霸",
+    "description": "那霸市區唯一海灘，旁邊就是波上宮神社。",
+    "has_parking": true,
+    "has_nursing_room": false,
+    "kid_friendly": 3,
+    "ticket_info": "免費",
+    "easy_tip": "適合最後一天順便去拍個照就好，海灘不大但離國際通很近。帶小孩不建議下水，踩踩沙拍照就好。"
+  },
+  {
+    "id": "kokusai-street",
+    "name": "國際通",
+    "region": "那霸",
+    "description": "沖繩最熱鬧的商業街，紀念品、美食一應俱全。",
+    "has_parking": false,
+    "has_nursing_room": false,
+    "kid_friendly": 3,
+    "ticket_info": "免費",
+    "easy_tip": "帶幼童建議推車，只走一小段買紀念品即可。牧志公設市場2樓有便宜海鮮丼，小孩可吃玉子燒。不必走完全程。"
+  }
+]

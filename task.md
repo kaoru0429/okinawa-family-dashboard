@@ -1,0 +1,42 @@
+# 沖繩家庭旅行動態面板 — 修正版任務清單
+
+- [x] **Phase 1：專案初始化與結構設定**
+  - [x] 在 `C:\Users\yusei\OneDrive\桌面\我的專案\okinawa-family-dashboard` 建立完整檔案結構（含 `images/icons/`、`data/`、`pages/`、`css/`、`js/`）
+  - [x] 撰寫基礎 HTML 架構與 CSS 設計系統（色彩變數、手機優先配置）
+  - [x] 設定 PWA 環境（`manifest.json` 與 `sw.js`，含離線快取支援）
+  - [x] 生成佔位用 PNG icon，需包含 192×192 與 512×512 兩種尺寸，否則 PWA 安裝時 icon 顯示空白
+- [x] **Phase 2：資料模型建立（JSON Mock Data）**
+  - [x] 建立 `data/spots.json`：所有景點實用資訊（停車、門票、兒童適合度、是否有哺乳室）
+  - [x] 建立 `data/emergency.json`：最近醫院、藥局、常用日語卡片；**醫院資料需標明是否設有小児科（兒科）**
+  - [x] 建立 `data/transport.json`：Day 4 單軌電車完整指南（供程式動態讀取渲染）
+  - [x] 建立 `data/weather.json`：模擬 OpenWeatherMap 回傳格式的天氣 mock 資料，供 `weather.js` 讀取
+  - [x] 建立 `data/places.json`：模擬沿途洗手間、便利店、藥局、加油站位置。**必須涵蓋：Day 2 北部路線（道の駅許田周邊、古宇利島橋頭）、Day 3 中部路線（兒童王國、AEON 北谷附近），以及 Day 3 おもろまち 還車前的加油站**。
+- [x] **Phase 3：核心 UI 與佈局（主畫面）**
+  - [x] 實作 `index.html`：頂部天氣面板（當前位置 + 溫度 + 一句話建議）、6個大型導航按鈕、底部狀態列
+  - [x] 實作 `css/style.css`：套用完整色彩系統
+  - [x] 找加油站按鈕需依裝置日期自動判斷顯示或隱藏：5/11（Day 4）當天自動隱藏，無需手動切換
+- [x] **Phase 4：各子頁面開發**
+  - [x] 實作 `pages/weather.html`：現在天氣、逐3小時預報、穿搭建議（大人與小孩分開列）、舒適度一句話
+  - [x] 實作 `pages/exchange.html`：JPY → TWD 換算、常用金額快速點選（¥500/1000/3000/5000/10000）、自訂輸入
+  - [x] 實作 `pages/spots.html` 與 `pages/spot-detail.html`：景點清單與詳細資訊（含幼童適合度、導航、停車、洗手間、輕鬆玩法建議）
+  - [x] 實作 `pages/emergency.html`：一鍵撥打 110/119、醫院清單（**標明小児科**）、常用醫療日語（中文→日文→羅馬拼音）
+  - [x] 實作 `pages/day4-transport.html`：**讀取 `data/transport.json` 渲染內容**的完整 step-by-step 單軌電車指南，含緊急備案（搭計程車到機場預估）
+- [x] **Phase 5：JavaScript 邏輯**
+  - [x] `app.js`：Geolocation 定位（含 Haversine 距離計算）、PWA 註冊、加油站按鈕依日期自動顯示/隱藏邏輯
+  - [x] `weather.js`：讀取 `data/weather.json` 並渲染，含穿搭建議
+  - [x] `places.js`：讀取 `data/places.json`，依 Geolocation 結果做距離排序，顯示距離標籤
+  - [x] `spots.js`：載入景點資訊並渲染詳情頁（含輕鬆玩法建議、動態 Google Maps 導航）
+  - [x] `exchange.js`：JPY/TWD 匯率換算邏輯（mock 匯率值）
+  - [x] `emergency.js`：緊急資源渲染（含醫院、藥局、日語發音卡片）
+- [x] **Phase 6：溫和推播通知系統**
+  - [x] `js/notify.js`：依據條件精準觸發（開車30分後、快到景點、接近用餐、油量提醒）
+  - [x] 推播格式：一句話 + 【看一下】【不用了】兩個按鈕；點「不用了」立即消失，短時間內不重複推
+  - [x] 語氣確保：只用「要不要…」「順便來看一下…」「想不想…」等無壓力語氣
+- [x] **Phase 7：測試與優化**
+  - [x] 全部 9 個 JS 檔案通過語法檢查 (node -c)
+  - [x] 全部 5 個 JSON 檔案通過格式驗證 (JSON.parse)
+  - [x] 所有 9 個 HTML 頁面均可透過 http-server 正常存取
+  - [ ] 手動在 Chrome DevTools iPhone 視圖確認——**需使用者自行操作**
+  - [ ] 切換至 Offline 驗證離線功能——**需使用者自行操作**
+- [ ] **旅行前最終驗收 (獨立於開發)**
+  - [ ] 出發前一週實機測試：在真機 iPhone 上安裝到主畫面，實際切換 Wi-Fi/行動數據/離線測試

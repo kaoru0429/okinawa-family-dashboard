@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>沖繩家庭旅行</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0077BE">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+</head>
+<body>
+    <header class="app-header">
+        <h1>沖繩旅行助手</h1>
+    </header>
+    
+    <main class="app-content">
+        <!-- 天氣面板 -->
+        <section class="weather-panel" id="weather-panel" onclick="location.href='pages/weather.html'">
+            <div class="weather-info">
+                <span class="location">沖繩</span>
+                <span class="temp" id="current-temp">--°C</span>
+            </div>
+            <div class="weather-suggestion" id="weather-suggestion">載入中...</div>
+        </section>
+
+        <!-- 導航功能表 -->
+        <nav class="main-nav">
+            <a href="pages/spots.html" class="nav-btn bg-primary">
+                <span class="icon">🎡</span>
+                <span class="label">景點指南</span>
+            </a>
+            <a href="pages/exchange.html" class="nav-btn bg-accent">
+                <span class="icon">💴</span>
+                <span class="label">匯率換算</span>
+            </a>
+            <a href="pages/places.html" class="nav-btn bg-success" id="btn-places">
+                <span class="icon">🚻</span>
+                <span class="label">找洗手間/便利店</span>
+            </a>
+            <a href="pages/emergency.html" class="nav-btn bg-danger">
+                <span class="icon">🚑</span>
+                <span class="label">緊急醫療</span>
+            </a>
+            <a href="pages/day4-transport.html" class="nav-btn bg-warning">
+                <span class="icon">🚝</span>
+                <span class="label">單軌電車 (Day4)</span>
+            </a>
+            <a href="pages/gas-station.html" class="nav-btn bg-dark" id="btn-gas-station">
+                <span class="icon">⛽</span>
+                <span class="label">找加油站</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="app-footer">
+        <div class="status-bar" id="status-bar">就緒</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/notify.js"></script>
+</body>
+</html>

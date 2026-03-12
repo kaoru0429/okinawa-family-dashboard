@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Day4 單軌電車指南 - 沖繩旅行助手</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .step-num {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            background: var(--warning-color);
+            color: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+        .step-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        .step-container::after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 30px;
+            bottom: -16px;
+            width: 2px;
+            background: #eee;
+            z-index: 0;
+        }
+        .step-container:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="app-header" style="background-color: var(--warning-color);">
+        <a href="../index.html" class="back-btn">⬅</a>
+        <h1 id="transport-title">單軌電車指南</h1>
+    </header>
+    <main class="app-content">
+        <div class="card" id="transport-info" style="text-align:center; color: #555;">
+            載入中...
+        </div>
+
+        <div class="card">
+            <div class="card-title">搭乘步驟</div>
+            <div id="steps-list" style="padding-top:10px;">
+                <!-- JS 填入 -->
+            </div>
+        </div>
+
+        <div class="card" style="background: #fff3e0; border-left: 4px solid var(--warning-color);">
+            <div class="card-title" id="backup-title">緊急備案</div>
+            <div id="backup-desc">載入中...</div>
+            <div id="backup-cost" style="font-weight:bold; color:var(--danger-color); margin-top:8px;"></div>
+        </div>
+    </main>
+    <script src="../js/transport.js"></script>
+</body>
+</html>

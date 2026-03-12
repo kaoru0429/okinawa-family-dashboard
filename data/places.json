@@ -1,0 +1,114 @@
+[
+  {
+    "type": "toilet",
+    "name": "道の駅許田 洗手間",
+    "location": "北部",
+    "note": "有尿布台、兒童馬桶，休息區可買當地小點心",
+    "lat": 26.5915,
+    "lng": 127.9685
+  },
+  {
+    "type": "toilet",
+    "name": "古宇利島橋頭公廁",
+    "location": "北部",
+    "note": "過橋後右手邊停車場旁，設備簡單但乾淨",
+    "lat": 26.6940,
+    "lng": 128.0250
+  },
+  {
+    "type": "convenience",
+    "name": "Lawson 古宇利大橋前",
+    "location": "北部",
+    "note": "買水、小點心很方便，也有洗手間",
+    "lat": 26.6785,
+    "lng": 128.0180
+  },
+  {
+    "type": "convenience",
+    "name": "FamilyMart 許田IC附近",
+    "location": "北部",
+    "note": "下高速後第一間便利店，適合補給飲料零食",
+    "lat": 26.5880,
+    "lng": 127.9700
+  },
+  {
+    "type": "toilet",
+    "name": "美麗海水族館 多功能洗手間",
+    "location": "北部",
+    "note": "園區內多處設有親子廁所，B1與1F最方便",
+    "lat": 26.6944,
+    "lng": 127.8778
+  },
+  {
+    "type": "nursing",
+    "name": "美麗海水族館 哺乳室",
+    "location": "北部",
+    "note": "位在1F大廳旁，有熱水、尿布台",
+    "lat": 26.6944,
+    "lng": 127.8778
+  },
+  {
+    "type": "nursing",
+    "name": "沖繩兒童王國 哺乳室",
+    "location": "中部",
+    "note": "位在入口處遊客中心，有空調和舒適座椅",
+    "lat": 26.3340,
+    "lng": 127.8050
+  },
+  {
+    "type": "toilet",
+    "name": "沖繩兒童王國 親子廁所",
+    "location": "中部",
+    "note": "園區內有3處親子廁所，觸摸廣場旁最近",
+    "lat": 26.3340,
+    "lng": 127.8050
+  },
+  {
+    "type": "convenience",
+    "name": "FamilyMart AEON北谷旁",
+    "location": "中部",
+    "note": "大推炸雞，可順便買濕紙巾和防蚊液",
+    "lat": 26.3260,
+    "lng": 127.7640
+  },
+  {
+    "type": "convenience",
+    "name": "Lawson 北谷美國村前",
+    "location": "中部",
+    "note": "美國村停車場對面，深夜也營業",
+    "lat": 26.3270,
+    "lng": 127.7620
+  },
+  {
+    "type": "nursing",
+    "name": "AEON MALL 北谷 哺乳室",
+    "location": "中部",
+    "note": "2F 兒童用品區旁，設備完善",
+    "lat": 26.3255,
+    "lng": 127.7650
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS おもろまち (還車前)",
+    "location": "那霸",
+    "note": "還車前最後加滿油 (滿タン返し)，從美國村過來約30分車程",
+    "lat": 26.2245,
+    "lng": 127.6950
+  },
+  {
+    "type": "gas_station",
+    "name": "出光 SS 58號線名護方向",
+    "location": "北部",
+    "note": "北部跑完回程路上可加油，靠58號國道旁",
+    "lat": 26.5800,
+    "lng": 127.9650
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS 北谷國道58附近",
+    "location": "中部",
+    "note": "中部行程結束後順路可加，離AEON北谷約5分車程",
+    "lat": 26.3350,
+    "lng": 127.7700
+  }
+]

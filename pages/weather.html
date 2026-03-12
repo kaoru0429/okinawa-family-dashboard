@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>天氣與穿搭 - 沖繩旅行助手</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <a href="../index.html" class="back-btn">⬅</a>
+        <h1>天氣與穿搭</h1>
+    </header>
+    <main class="app-content">
+        <div class="card">
+            <div class="card-title">目前天氣</div>
+            <div id="weather-current" style="font-size:1.5em; text-align:center; margin:10px 0;">載入中...</div>
+            <div id="weather-desc" style="text-align:center; color:#666;"></div>
+        </div>
+        
+        <div class="card">
+            <div class="card-title">今日預報</div>
+            <div id="weather-forecast"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">穿搭建議</div>
+            <div style="margin-bottom: 10px;">
+                <strong>👨‍👩‍👧 大人：</strong>
+                <div id="outfit-adult" class="list-item-desc">載入中...</div>
+            </div>
+            <div>
+                <strong>👶 小孩（推車/跑跳）：</strong>
+                <div id="outfit-child" class="list-item-desc">載入中...</div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/weather.js"></script>
+</body>
+</html>

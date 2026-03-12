@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>沿途加油站 - 沖繩旅行助手</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="app-header" style="background-color: var(--dark-color);">
+        <a href="../index.html" class="back-btn">⬅</a>
+        <h1 id="places-title">⛽ 找加油站</h1>
+    </header>
+    <main class="app-content">
+        <div class="card" id="places-list">
+            <div style="text-align:center;">載入中...</div>
+        </div>
+    </main>
+    <script src="../js/app.js"></script>
+    <script>
+        window.currentPlaceType = ['gas_station'];
+    </script>
+    <script src="../js/places.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>匯率換算 - 沖繩旅行助手</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <a href="../index.html" class="back-btn">⬅</a>
+        <h1>匯率換算</h1>
+    </header>
+    <main class="app-content">
+        <div class="card" style="text-align:center;">
+            <div class="card-title">現鈔金額 (JPY)</div>
+            <input type="number" id="jpy-input" placeholder="輸入日幣金額" style="width:100%; font-size:2em; text-align:center; padding:10px; border-radius:8px; border:1px solid #ccc; margin-bottom:10px;">
+            <div style="font-size:1.5em; color:var(--accent-color); font-weight:bold;">
+                約 <span id="twd-result">0</span> TWD
+            </div>
+            <div style="margin-top:10px; font-size:0.8em; color:#999;">參考匯率: 1 JPY = <span id="rate-display">0.21</span> TWD</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">快速快捷鍵</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                <button class="btn btn-primary" onclick="setJpy(500)">¥ 500 (轉蛋/飲料)</button>
+                <button class="btn btn-primary" onclick="setJpy(1000)">¥ 1000 (拉麵)</button>
+                <button class="btn btn-primary" onclick="setJpy(3000)">¥ 3000 (餐點)</button>
+                <button class="btn btn-primary" onclick="setJpy(5000)">¥ 5000 (紀念品)</button>
+                <button class="btn btn-primary" onclick="setJpy(10000)">¥ 10000 (大鈔)</button>
+            </div>
+        </div>
+    </main>
+    <script src="../js/exchange.js"></script>
+</body>
+</html>

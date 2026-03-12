@@ -1,0 +1,21 @@
+{
+  "current": {
+    "temp": 26,
+    "weather": "Sunny",
+    "description": "晴時多雲",
+    "icon": "01d",
+    "suggestion": "天氣滿溫暖的，太陽有點大，記得多喝水！"
+  },
+  "forecast": [
+    { "time": "06:00", "temp": 23, "weather": "Clear" },
+    { "time": "09:00", "temp": 25, "weather": "Sunny" },
+    { "time": "12:00", "temp": 28, "weather": "Sunny" },
+    { "time": "15:00", "temp": 27, "weather": "Clouds" },
+    { "time": "18:00", "temp": 25, "weather": "Clear" },
+    { "time": "21:00", "temp": 24, "weather": "Clear" }
+  ],
+  "outfit": {
+    "adult": "短袖上衣、薄防曬外套、舒適好走的鞋子。建議帶把輕便摺疊傘以防午後陣雨。",
+    "child": "透氣純棉短袖、防風薄外套、遮陽帽、替換衣物1-2套。推車記得裝遮陽罩。"
+  }
+}
