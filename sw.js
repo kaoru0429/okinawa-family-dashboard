@@ -20,6 +20,7 @@ const urlsToCache = [
   './data/emergency.json',
   './data/transport.json',
   './data/places.json',
+  './data/events.json',
   // Pages
   './pages/weather.html',
   './pages/exchange.html',

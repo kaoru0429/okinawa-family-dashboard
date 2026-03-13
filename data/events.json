@@ -1,0 +1,242 @@
+[
+  {
+    "id": "D1_ARRIVE",
+    "day": 1,
+    "triggerType": "TIME",
+    "triggerValue": "14:00",
+    "message": "快到那霸機場了，要不要確認一下租車櫃台位置？",
+    "cooldownMinutes": 360,
+    "enabled": true,
+    "link": "pages/places.html"
+  },
+  {
+    "id": "D1_CHECKIN",
+    "day": 1,
+    "triggerType": "TIME",
+    "triggerValue": "17:00",
+    "message": "順便看一下今晚的飯店地址，方便等一下導航進去",
+    "cooldownMinutes": 360,
+    "enabled": true,
+    "link": "pages/places.html"
+  },
+  {
+    "id": "D1_DINNER",
+    "day": 1,
+    "triggerType": "TIME",
+    "triggerValue": "18:30",
+    "message": "小朋友應該餓了，附近有幾間沖繩麵，要不要看一下？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/spots.html"
+  },
+  {
+    "id": "D1_NIGHT",
+    "day": 1,
+    "triggerType": "TIME",
+    "triggerValue": "21:00",
+    "message": "今天辛苦了，明天 Day 2 北部路線預計幾點出發？要不要設個提醒？",
+    "cooldownMinutes": 480,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "D2_MORNING",
+    "day": 2,
+    "triggerType": "TIME",
+    "triggerValue": "08:00",
+    "message": "早安！今天要去古宇利島，出發前要不要確認一下天氣？",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "pages/weather.html"
+  },
+  {
+    "id": "D2_MICHI_NEAR",
+    "day": 2,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.5831, "lng": 127.9734, "radiusMeters": 500 },
+    "message": "快到許田道之驛了，這裡是沖繩土產必買點，要不要順便停一下？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/places.html"
+  },
+  {
+    "id": "D2_BRIDGE_NEAR",
+    "day": 2,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.6908, "lng": 128.0163, "radiusMeters": 800 },
+    "message": "古宇利橋快到了，風景很美，想不想提前找個地方停車拍照？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/spots.html"
+  },
+  {
+    "id": "D2_LUNCH",
+    "day": 2,
+    "triggerType": "TIME",
+    "triggerValue": "12:00",
+    "message": "差不多午餐時間了，附近有濱邊茶屋，要不要先確認今天有沒有開？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/spots.html"
+  },
+  {
+    "id": "D2_CHILD_REST",
+    "day": 2,
+    "triggerType": "TIME",
+    "triggerValue": "14:30",
+    "message": "小朋友坐車一段時間了，前方有個休息區，要不要讓他們下車動一動？",
+    "cooldownMinutes": 180,
+    "enabled": true,
+    "link": "pages/places.html"
+  },
+  {
+    "id": "D2_RETURN",
+    "day": 2,
+    "triggerType": "TIME",
+    "triggerValue": "16:30",
+    "message": "今天北部行程差不多了，要不要看一下回程路線？",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "pages/spots.html"
+  },
+  {
+    "id": "D3_MORNING",
+    "day": 3,
+    "triggerType": "TIME",
+    "triggerValue": "08:30",
+    "message": "今天要去兒童王國，要不要先看一下今日天氣和開放時間？",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "pages/weather.html"
+  },
+  {
+    "id": "D3_KINGDOM_NEAR",
+    "day": 3,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.3340, "lng": 127.8050, "radiusMeters": 500 },
+    "message": "兒童王國快到了！停車場在北側入口，小朋友應該會很興奮 🎠",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/spot-detail.html?id=okinawa-zoo"
+  },
+  {
+    "id": "D3_AEON_NEAR",
+    "day": 3,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.3150, "lng": 127.7600, "radiusMeters": 600 },
+    "message": "快到 AEON 了，順便補充一下飲用水和零食嗎？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/places.html"
+  },
+  {
+    "id": "D3_LUNCH",
+    "day": 3,
+    "triggerType": "TIME",
+    "triggerValue": "12:30",
+    "message": "午餐時間到了，附近有幾間親子友善餐廳，要不要看一下？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/spots.html"
+  },
+  {
+    "id": "D3_GAS_REMIND",
+    "day": 3,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.2230, "lng": 127.6950, "radiusMeters": 1000 },
+    "message": "明天就要還車了，要不要順便在這裡把油加滿？",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "pages/gas-station.html"
+  },
+  {
+    "id": "D3_LAST_NIGHT",
+    "day": 3,
+    "triggerType": "TIME",
+    "triggerValue": "20:00",
+    "message": "明天搭單軌電車去機場，要不要現在看一下 Day 4 的交通指南？",
+    "cooldownMinutes": 480,
+    "enabled": true,
+    "link": "pages/day4-transport.html"
+  },
+  {
+    "id": "D4_MORNING",
+    "day": 4,
+    "triggerType": "TIME",
+    "triggerValue": "08:00",
+    "message": "最後一天了！今天搭單軌電車，要不要確認一下出發時間？",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "pages/day4-transport.html"
+  },
+  {
+    "id": "D4_CHECKOUT",
+    "day": 4,
+    "triggerType": "TIME",
+    "triggerValue": "10:00",
+    "message": "退房前記得確認有沒有遺漏的東西，特別是充電器和小朋友的玩具 🧸",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "D4_STATION_NEAR",
+    "day": 4,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.2150, "lng": 127.6800, "radiusMeters": 300 },
+    "message": "要進站了，記得準備好 IC 卡或現金買票，小朋友未滿 6 歲免費喔！",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/day4-transport.html"
+  },
+  {
+    "id": "D4_AIRPORT_NEAR",
+    "day": 4,
+    "triggerType": "GEO",
+    "triggerValue": { "lat": 26.2060, "lng": 127.6460, "radiusMeters": 500 },
+    "message": "快到機場了！要不要看一下登機閘口在哪？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "D4_CHECKIN_TIME",
+    "day": 4,
+    "triggerType": "TIME",
+    "triggerValue": "13:00",
+    "message": "差不多可以去辦理登機手續了，記得提前 2 小時到",
+    "cooldownMinutes": 240,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "SYS_OFFLINE",
+    "day": null,
+    "triggerType": "STATE",
+    "triggerValue": "offline",
+    "message": "目前離線中，所有頁面仍可正常使用，已預先儲存完整資料 ✅",
+    "cooldownMinutes": 30,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "SYS_ONLINE",
+    "day": null,
+    "triggerType": "STATE",
+    "triggerValue": "online",
+    "message": "網路恢復囉，天氣資訊可以更新了",
+    "cooldownMinutes": 30,
+    "enabled": true,
+    "link": "index.html"
+  },
+  {
+    "id": "SYS_LOW_BATTERY",
+    "day": null,
+    "triggerType": "STATE",
+    "triggerValue": "battery",
+    "message": "手機電量低於 20% 了，要不要找個地方充電？",
+    "cooldownMinutes": 120,
+    "enabled": true,
+    "link": "pages/places.html"
+  }
+]

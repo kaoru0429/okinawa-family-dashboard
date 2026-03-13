@@ -110,7 +110,31 @@ function getCurrentDay() {
 
 window.getCurrentDay = getCurrentDay;
 
+// 更新網路狀態 (Badge)
+function updateOnlineStatus() {
+    const statusEl = document.getElementById('status-bar');
+    if (!statusEl) return;
+    
+    if (!navigator.onLine) {
+        statusEl.textContent = '⚡ 離線模式 (資料已快取)';
+        statusEl.style.background = 'var(--warning-color)';
+        statusEl.style.color = '#fff';
+    } else {
+        // Recover original text or styles if needed
+        statusEl.textContent = '系統就緒';
+        statusEl.style.background = 'transparent';
+        statusEl.style.color = 'var(--text-color)';
+    }
+}
+
+window.updateOnlineStatus = updateOnlineStatus;
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+
 document.addEventListener('DOMContentLoaded', () => {
+    // 初始化離線狀態
+    updateOnlineStatus();
+
     // 啟動定位
     GeoHelper.init();
 
