@@ -11,15 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
     notifyContainer.id = 'notify-container';
     notifyContainer.style.cssText = `
         position: fixed;
-        bottom: -250px;
+        top: -150px;
         left: 16px;
         right: 16px;
         background: white;
-        box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
-        border-radius: 16px 16px 0 0;
-        padding: 20px;
-        transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        border-radius: 12px;
+        padding: 16px;
+        transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         z-index: 1000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 12px;
     `;
     document.body.appendChild(notifyContainer);
 
@@ -151,6 +155,8 @@ function isCoolingDown(id, cooldownMinutes) {
 
 window.isCoolingDown = isCoolingDown;
 
+let notifyAutoOffTimer = null;
+
 function triggerNotification(id, message, linkUrl, cooldownMinutes = 30) {
     if (cooldownMinutes > 0 && isCoolingDown(id, cooldownMinutes)) {
         return;
@@ -158,6 +164,10 @@ function triggerNotification(id, message, linkUrl, cooldownMinutes = 30) {
 
     const container = document.getElementById('notify-container');
     if (!container) return;
+
+    if (notifyAutoOffTimer) {
+        clearTimeout(notifyAutoOffTimer);
+    }
 
     // 判斷是否為子頁面，需切換連結前綴
     const isIndex = window.location.pathname.endsWith('index.html') 
@@ -171,29 +181,28 @@ function triggerNotification(id, message, linkUrl, cooldownMinutes = 30) {
         targetLink = '../index.html';
     }
 
-    // 將按鈕文字更換為溫和式用語
     container.innerHTML = `
-        <div style="font-size:1.05em; font-weight:bold; color:var(--text-color); margin-bottom:18px; line-height:1.6;">
-            💡 ${message}
-        </div>
-        <div style="display:flex; justify-content:space-between; gap:16px;">
-            <button id="btn-dismiss-${id}" style="flex:1; padding:16px; border-radius:12px; border:none; background:var(--bg-color); color:var(--text-color); font-size:1em; font-weight:bold; cursor:pointer;">等一下再說</button>
-            <button id="btn-check-${id}" style="flex:1; padding:16px; border-radius:12px; border:none; background:var(--primary-color); color:white; font-size:1em; font-weight:bold; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.1);">好啊，看一下</button>
+        <div style="font-size:1.5em; flex-shrink:0;">💡</div>
+        <div style="flex:1;">
+            <div style="font-size:0.95em; font-weight:bold; color:var(--text-color); line-height:1.4;">
+                ${message}
+            </div>
+            ${targetLink ? '<div style="font-size:0.75em; color:var(--primary-color); margin-top:4px; font-weight:bold;">點擊查看 ➔</div>' : ''}
         </div>
     `;
 
-    container.style.bottom = '0px';
+    container.style.top = '16px';
 
-    document.getElementById(`btn-dismiss-${id}`).onclick = () => {
-        dismissNotification(id);
-    };
-
-    document.getElementById(`btn-check-${id}`).onclick = () => {
+    container.onclick = () => {
         dismissNotification(id);
         if (targetLink) {
             window.location.href = targetLink;
         }
     };
+
+    notifyAutoOffTimer = setTimeout(() => {
+        dismissNotification(id);
+    }, 7000);
 }
 
 window.triggerNotification = triggerNotification;
@@ -201,7 +210,7 @@ window.triggerNotification = triggerNotification;
 function dismissNotification(id) {
     const container = document.getElementById('notify-container');
     if (container) {
-        container.style.bottom = '-250px';
+        container.style.top = '-150px';
     }
     localStorage.setItem(`notify_dismissed_${id}`, Date.now().toString());
 }
