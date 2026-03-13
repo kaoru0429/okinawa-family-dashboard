@@ -4,31 +4,15 @@
       "name": "中部德洲會醫院",
       "address": "沖繩市照屋3-20-1",
       "has_pediatrics": true,
+      "is24h": true,
       "phone": "098-932-1111"
-    },
-    {
-      "name": "縣立北部醫院",
-      "address": "名護市大中2-12-3",
-      "has_pediatrics": true,
-      "phone": "0980-52-2719"
     },
     {
       "name": "那霸市立醫院",
       "address": "那霸市古島2-31-1",
       "has_pediatrics": true,
+      "is24h": true,
       "phone": "098-884-5111"
-    },
-    {
-      "name": "南部德洲會醫院",
-      "address": "八重瀨町外間171-1",
-      "has_pediatrics": true,
-      "phone": "098-998-0011"
-    },
-    {
-      "name": "浦添綜合醫院",
-      "address": "浦添市伊祖4-16-1",
-      "has_pediatrics": false,
-      "phone": "098-878-0231"
     }
   ],
   "pharmacies": [

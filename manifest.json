@@ -3,6 +3,7 @@
   "short_name": "沖繩",
   "description": "沖繩家庭旅行動態面板",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F5F5F5",
   "theme_color": "#0077BE",

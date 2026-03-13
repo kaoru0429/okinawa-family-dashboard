@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.textContent = s.label;
             btn.style.cssText = `
                 padding: 4px 10px; font-size: 0.7em;
-                background: rgba(0,0,0,0.55); color: white;
+                background: var(--text-color); color: white;
                 border: none; border-radius: 16px; opacity: 0.8; cursor: pointer;
             `;
             btn.onclick = () => showNotification(s.msg, s.link);
@@ -140,13 +140,12 @@ function startScenarioChecks() {
         }, 30000); // 每 30 秒檢查
     }
 
-    // 4) 加油提醒 — Day 3 下午 (5/10) 提醒還車前加油
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const date = today.getDate();
-    const hour = today.getHours();
+    // 4) 加油提醒 — Day 3 下午提醒還車前加油
+    const currentDay = typeof getCurrentDay === 'function' ? getCurrentDay() : null;
+    const now = new Date();
+    const hour = now.getHours();
 
-    if (month === 5 && date === 10 && hour >= 15 && !notifyLog['gas_remind']) {
+    if (currentDay === 3 && hour >= 15 && !notifyLog['gas_remind']) {
         notifyLog['gas_remind'] = true;
         setTimeout(() => {
             showNotification(
@@ -159,18 +158,23 @@ function startScenarioChecks() {
 
 // ===== 推播顯示 =====
 function showNotification(message, linkUrl) {
-    if (sessionStorage.getItem('notify_dismissed') === 'true') {
+    const notifyId = btoa(message).substring(0, 16); // 簡易 ID
+    const lastDismissed = localStorage.getItem(`notify_dismissed_${notifyId}`);
+    
+    // 冷卻時間 30 分鐘 (1800000ms)
+    if (lastDismissed && (Date.now() - parseInt(lastDismissed)) < 1800000) {
+        console.log('推播冷卻中:', message);
         return;
     }
 
     const container = document.getElementById('notify-container');
     container.innerHTML = `
-        <div style="font-size:1.1em; font-weight:bold; color:var(--text-color, #333); margin-bottom:16px; line-height:1.5;">
+        <div style="font-size:1.1em; font-weight:bold; color:var(--text-color); margin-bottom:16px; line-height:1.5;">
             💡 ${message}
         </div>
         <div style="display:flex; justify-content:space-between; gap:16px;">
-            <button id="btn-dismiss" style="flex:1; padding:14px; border-radius:10px; border:none; background:#f0f0f0; color:#666; font-size:1em; font-weight:bold; cursor:pointer;">不用了</button>
-            <button id="btn-check" style="flex:1; padding:14px; border-radius:10px; border:none; background:var(--primary-color, #0077BE); color:white; font-size:1em; font-weight:bold; cursor:pointer;">看一下 👀</button>
+            <button id="btn-dismiss" style="flex:1; padding:14px; border-radius:10px; border:none; background:var(--bg-color); color:var(--text-color); font-size:1em; font-weight:bold; cursor:pointer;">不用了</button>
+            <button id="btn-check" style="flex:1; padding:14px; border-radius:10px; border:none; background:var(--primary-color); color:white; font-size:1em; font-weight:bold; cursor:pointer;">看一下 👀</button>
         </div>
     `;
 
@@ -178,8 +182,7 @@ function showNotification(message, linkUrl) {
 
     document.getElementById('btn-dismiss').onclick = () => {
         container.style.bottom = '-250px';
-        sessionStorage.setItem('notify_dismissed', 'true');
-        setTimeout(() => { sessionStorage.removeItem('notify_dismissed'); }, 3600000);
+        localStorage.setItem(`notify_dismissed_${notifyId}`, Date.now().toString());
     };
 
     document.getElementById('btn-check').onclick = () => {

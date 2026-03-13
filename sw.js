@@ -13,6 +13,7 @@ const urlsToCache = [
   './js/emergency.js',
   './js/transport.js',
   './js/notify.js',
+  './js/geo.js',
   // Data
   './data/weather.json',
   './data/spots.json',
@@ -48,19 +49,8 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
       .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request).then(networkResponse => {
-          // 動態快取新請求
-          if (networkResponse && networkResponse.status === 200) {
-            const responseClone = networkResponse.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, responseClone);
-            });
-          }
-          return networkResponse;
-        });
+        // 若在快取中找到則直接回傳，否則從網路獲取 (不快取新資源)
+        return response || fetch(event.request);
       })
       .catch(() => {
         // 離線 fallback

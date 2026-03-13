@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     jpyInput.addEventListener('input', (e) => {
         const val = parseFloat(e.target.value);
-        if (isNaN(val)) {
-            twdResult.textContent = '0';
+        if (isNaN(val) || val <= 0) {
+            twdResult.textContent = '請輸入金額';
         } else {
             twdResult.textContent = Math.round(val * MOCK_RATE).toLocaleString();
         }

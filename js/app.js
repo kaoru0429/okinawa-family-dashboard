@@ -88,16 +88,37 @@ const GeoHelper = {
 // 將 GeoHelper 暴露給其他 JS
 window.GeoHelper = GeoHelper;
 
+// ===== 全域設定 =====
+const TRIP_START_DATE = "2025-05-08";
+
+// ===== 工具函式 =====
+function getCurrentDay() {
+    const start = new Date(TRIP_START_DATE);
+    const today = new Date();
+    // 歸零時間
+    start.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    
+    const diffTime = today - start;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+    
+    if (diffDays >= 1 && diffDays <= 4) {
+        return diffDays;
+    }
+    return null;
+}
+
+window.getCurrentDay = getCurrentDay;
+
 document.addEventListener('DOMContentLoaded', () => {
     // 啟動定位
     GeoHelper.init();
 
-    // Check date to hide gas station button on Day 4 (May 11)
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const date = today.getDate();
+    // 依據第幾天隱藏/顯示功能
+    const currentDay = getCurrentDay();
     
-    if (month === 5 && date === 11) {
+    // Day 4 (或之後) 隱藏加油站
+    if (currentDay && currentDay >= 4) {
         const gasBtn = document.getElementById('btn-gas-station');
         if (gasBtn) {
             gasBtn.style.display = 'none';

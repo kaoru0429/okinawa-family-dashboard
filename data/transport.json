@@ -2,6 +2,14 @@
   "day": "Day 4",
   "date": "5/11",
   "transport_type": "單軌電車 (Yui Rail)",
+  "stations": [
+    { "name": "おもろまち站", "nameJp": "おもろまち駅" },
+    { "name": "安里站", "nameJp": "安里駅" },
+    { "name": "牧志站", "nameJp": "牧志駅" },
+    { "name": "美榮橋站", "nameJp": "美栄橋駅" },
+    { "name": "縣廳前站", "nameJp": "県庁前駅" },
+    { "name": "那霸機場站", "nameJp": "那覇空港駅" }
+  ],
   "steps": [
     {
       "step": 1,
