@@ -1,5 +1,17 @@
 [
   {
+    "id": "american-village",
+    "name": "アメリカンビレッジ",
+    "nameZh": "美國村",
+    "day": 1,
+    "type": "shopping",
+    "parking": "免費大型停車場 (Aeon旁)",
+    "ticketJPY": 0,
+    "childFriendly": 4,
+    "nursingRoom": true,
+    "easyPlayTip": "第一天剛到，建議在日落海灘走走，商城內推車友善，累了隨時可找餐廳休息。"
+  },
+  {
     "id": "kouri-island",
     "name": "古宇利島 / 古宇利大橋",
     "nameZh": "古宇利島 / 古宇利大橋",
@@ -17,11 +29,11 @@
     "nameZh": "美麗海水族館",
     "day": 2,
     "type": "museum",
-    "parking": "P7 停車場最接近",
+    "parking": "P7 停車場最接近入口",
     "ticketJPY": 2180,
     "childFriendly": 5,
     "nursingRoom": true,
-    "easyPlayTip": "建議直奔黑潮之海，看完海豚表演就休息，避免小孩逛到累爆。"
+    "easyPlayTip": "建議直奔黑潮之海，看完海豚表演就休息，避免推車在戶外曬太久。"
   },
   {
     "id": "okinawa-zoo",
@@ -34,5 +46,41 @@
     "childFriendly": 5,
     "nursingRoom": true,
     "easyPlayTip": "動物觸摸區是精華，科學館有強力冷氣，是爸媽休息的好地方。"
+  },
+  {
+    "id": "aeon-rycom",
+    "name": "イオンモール沖縄ライカム",
+    "nameZh": "永旺夢樂城沖繩來客夢",
+    "day": 3,
+    "type": "shopping",
+    "parking": "免費立體停車場",
+    "ticketJPY": 0,
+    "childFriendly": 5,
+    "nursingRoom": true,
+    "easyPlayTip": "推車租借非常方便，一樓大水族箱小童必看，雨備與避暑的最佳選擇。"
+  },
+  {
+    "id": "kokusai-dori",
+    "name": "国際通り",
+    "nameZh": "國際通",
+    "day": 4,
+    "type": "shopping",
+    "parking": "多為收費停車場 (建議搭單軌)",
+    "ticketJPY": 0,
+    "childFriendly": 3,
+    "nursingRoom": true,
+    "easyPlayTip": "建議搭單軌電車前往，道路人多擁擠，小朋友推推車請注意安全，逛一半就可進百貨休息。"
+  },
+  {
+    "id": "shurijo",
+    "name": "首里城公園",
+    "nameZh": "首里城",
+    "day": 4,
+    "type": "scenic",
+    "parking": "地下收費停車場",
+    "ticketJPY": 400,
+    "childFriendly": 3,
+    "nursingRoom": true,
+    "easyPlayTip": "有許多階梯，推車需繞無障礙坡道，建議只走外側無料區拍拍照即可。"
   }
 ]
