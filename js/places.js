@@ -82,7 +82,7 @@ function renderPlaces(types) {
             </div>
             <div class="list-item-desc" style="margin-top:8px;">📝 備註：${p.note}</div>
             <div style="margin-top:12px; width:100%;">
-                <a href="https://maps.google.com/?q=${encodeURIComponent(p.name + ' 沖繩')}" target="_blank" class="btn btn-success" style="display:inline-block; width:100%; padding:10px; font-size:0.95em;">📍 導航前往</a>
+                <a href="${p.lat ? `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}&travelmode=driving` : `https://maps.google.com/?q=${encodeURIComponent(p.name + ' 沖繩')}`}" target="_blank" class="btn btn-success" style="display:inline-block; width:100%; padding:10px; font-size:0.95em;">📍 導航前往</a>
             </div>
         `;
         list.appendChild(dom);

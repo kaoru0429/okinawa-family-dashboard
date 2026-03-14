@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const navBtn = document.getElementById('nav-btn');
                     if (navBtn) {
-                        // 使用座標導航
-                        navBtn.href = spot.lat ? `https://maps.google.com/?q=${spot.lat},${spot.lng}` : `https://maps.google.com/?q=${encodeURIComponent(spot.name + ' 沖繩')}`;
+                        // 使用精確座標進行駕駛導航
+                        navBtn.href = spot.lat ? `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}&travelmode=driving` : `https://maps.google.com/?q=${encodeURIComponent(spot.name + ' 沖繩')}`;
                         navBtn.style.display = 'block';
                     }
                 }

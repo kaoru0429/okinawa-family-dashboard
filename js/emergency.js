@@ -28,12 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     const pedLabel = h.hasPediatrics ? '<span style="background:var(--danger-color); color:white; padding:2px 8px; border-radius:4px; font-size:0.75em; margin-left:8px;">小児科</span>' : '';
                     const h24Label = h.is24h ? '<span style="background:var(--text-color); color:white; padding:2px 8px; border-radius:4px; font-size:0.75em; margin-left:4px;">24H</span>' : '';
 
+                    const mapLink = h.lat ? `https://www.google.com/maps/dir/?api=1&destination=${h.lat},${h.lng}&travelmode=driving` : `https://maps.google.com/?q=${encodeURIComponent(h.name + ' 沖繩')}`;
+
                     dom.innerHTML = `
                         <div style="font-weight:bold; font-size:1.1em; color:var(--text-color);">
                             ${h.name} ${pedLabel}${h24Label}
                         </div>
                         <div class="list-item-desc">📍 ${h.address}</div>
-                        <a href="tel:${h.phone}" style="display:inline-block; margin-top:8px; padding:8px 16px; background:var(--bg-color); color:var(--primary-color); text-decoration:none; border-radius:6px; border:1px solid var(--primary-color); font-weight:bold;">📞 撥打 ${h.phone}</a>
+                        <div class="list-item-desc" style="margin-top:4px; font-size:0.85em; color:var(--text-color); opacity:0.9;">ℹ️ ${h.support || ''}</div>
+                        <div style="display:flex; gap:8px; margin-top:12px; width:100%;">
+                            <a href="tel:${h.phone}" class="btn btn-primary" style="flex:1; padding:8px; text-decoration:none; text-align:center; display:flex; justify-content:center; align-items:center; border-radius:6px; font-weight:bold;">📞 撥打</a>
+                            <a href="${mapLink}" target="_blank" class="btn btn-success" style="flex:1; padding:8px; text-decoration:none; text-align:center; display:flex; justify-content:center; align-items:center; border-radius:6px; font-weight:bold;">📍 導航</a>
+                        </div>
                     `;
                     hlist.appendChild(dom);
                 });
@@ -47,11 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     dom.className = 'list-item';
                     dom.style.flexDirection = 'column';
                     dom.style.alignItems = 'flex-start';
+                    const mapLink = p.lat ? `https://www.google.com/maps/dir/?api=1&destination=${p.lat},${p.lng}&travelmode=driving` : `https://maps.google.com/?q=${encodeURIComponent(p.name + ' 沖繩')}`;
                     dom.innerHTML = `
                         <div style="font-weight:bold; font-size:1.05em; color:var(--text-color);">
                             💊 ${p.name}
                         </div>
                         <div class="list-item-desc">${p.note}</div>
+                        <div style="margin-top:10px; width:100%;">
+                            <a href="${mapLink}" target="_blank" class="btn btn-success" style="display:inline-block; width:100%; padding:8px; text-decoration:none; text-align:center; border-radius:6px; font-weight:bold;">📍 導航前往</a>
+                        </div>
                     `;
                     plist.appendChild(dom);
                 });
