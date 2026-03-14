@@ -5,11 +5,13 @@
     "nameZh": "美國村",
     "day": 1,
     "type": "shopping",
-    "parking": "免費大型停車場 (Aeon旁)",
+    "lat": 26.316410,
+    "lng": 127.757820,
+    "parking": "AEON北谷對面大型免費公共停車場",
     "ticketJPY": 0,
-    "childFriendly": 4,
+    "childFriendly": 5,
     "nursingRoom": true,
-    "easyPlayTip": "第一天剛到，建議在日落海灘走走，商城內推車友善，累了隨時可找餐廳休息。"
+    "easyPlayTip": "AEON內配備完善的豪華哺乳室、推車租借服務，建議在此停車避開商圈內部狹巷。"
   },
   {
     "id": "kouri-island",
@@ -17,11 +19,13 @@
     "nameZh": "古宇利島 / 古宇利大橋",
     "day": 2,
     "type": "scenic",
-    "parking": "免費停車場",
+    "lat": 26.699050,
+    "lng": 128.022510,
+    "parking": "過古宇利橋後右轉免費停車區 (海龍旁)",
     "ticketJPY": 0,
-    "childFriendly": 5,
+    "childFriendly": 3,
     "nursingRoom": false,
-    "easyPlayTip": "走完橋後停在橋頭停車場，海龍就在旁邊，讓小朋友踩踩沙、看看海就好。"
+    "easyPlayTip": "通往沙灘之自然坡道略具挑戰，且該區公廁等母嬰硬體設施較為基礎，建議入島前先於許田休息站或便利商店處理。"
   },
   {
     "id": "churaumi",
@@ -29,11 +33,13 @@
     "nameZh": "美麗海水族館",
     "day": 2,
     "type": "museum",
-    "parking": "P7 停車場最接近入口",
+    "lat": 26.695540,
+    "lng": 127.877850,
+    "parking": "P7北閘門立體停車場 (限高2.3m)",
     "ticketJPY": 2180,
     "childFriendly": 5,
     "nursingRoom": true,
-    "easyPlayTip": "建議直奔黑潮之海，看完海豚表演就休息，避免推車在戶外曬太久。"
+    "easyPlayTip": "強烈建議停P7，1樓提供免費推車租借，搭電梯即可直達水族館，免受沖繩烈日或暴雨侵襲。"
   },
   {
     "id": "okinawa-zoo",
@@ -41,11 +47,13 @@
     "nameZh": "沖繩兒童王國",
     "day": 3,
     "type": "zoo",
-    "parking": "免費停車場",
+    "lat": 26.330210,
+    "lng": 127.798150,
+    "parking": "正門前方大型專屬停車場",
     "ticketJPY": 500,
-    "childFriendly": 5,
+    "childFriendly": 4,
     "nursingRoom": true,
-    "easyPlayTip": "動物觸摸區是精華，科學館有強力冷氣，是爸媽休息的好地方。"
+    "easyPlayTip": "園區依自然丘陵而建，戶外坡度較大；室內博物館Wonder Museum則平坦無礙且冷氣強，是避暑休息據點。"
   },
   {
     "id": "aeon-rycom",
@@ -53,11 +61,13 @@
     "nameZh": "永旺夢樂城沖繩來客夢",
     "day": 3,
     "type": "shopping",
-    "parking": "免費立體停車場",
+    "lat": 26.313580,
+    "lng": 127.796120,
+    "parking": "正面主入口旁平面與立體區",
     "ticketJPY": 0,
     "childFriendly": 5,
     "nursingRoom": true,
-    "easyPlayTip": "推車租借非常方便，一樓大水族箱小童必看，雨備與避暑的最佳選擇。"
+    "easyPlayTip": "定位於正面主入口大幅縮短步行距離，內部提供多樣化兒童造型推車，育嬰室設施為全島最高規格。"
   },
   {
     "id": "kokusai-dori",
@@ -65,11 +75,13 @@
     "nameZh": "國際通",
     "day": 4,
     "type": "shopping",
-    "parking": "多為收費停車場 (建議搭單軌)",
+    "lat": 26.216850,
+    "lng": 127.689320,
+    "parking": "唐吉訶德周邊收費停車場群 (如牧志 1-3-47)",
     "ticketJPY": 0,
     "childFriendly": 3,
     "nursingRoom": true,
-    "easyPlayTip": "建議搭單軌電車前往，道路人多擁擠，小朋友推推車請注意安全，逛一半就可進百貨休息。"
+    "easyPlayTip": "建議採取邊緣停靠策略停在緩衝區，避開主幹道擁擠及週日車輛管制。主幹道平坦，但市場棚蓋街區會極度擁擠。"
   },
   {
     "id": "shurijo",
@@ -77,10 +89,12 @@
     "nameZh": "首里城",
     "day": 4,
     "type": "scenic",
-    "parking": "地下收費停車場",
+    "lat": 26.217310,
+    "lng": 127.715230,
+    "parking": "首里杜館地下收費停車場專屬入口",
     "ticketJPY": 400,
-    "childFriendly": 3,
+    "childFriendly": 5,
     "nursingRoom": true,
-    "easyPlayTip": "有許多階梯，推車需繞無障礙坡道，建議只走外側無料區拍拍照即可。"
+    "easyPlayTip": "務必直接導航至地下停車場避免單行道迷航。地下室配有直達電梯，完美克服丘陵地形，並設有無障礙設施。"
   }
 ]

@@ -1,115 +1,99 @@
 [
   {
     "type": "toilet",
-    "name": "道の駅許田 洗手間",
+    "name": "道の駅許田 洗手間與休息站",
     "location": "北部",
-    "note": "有尿布台、兒童馬桶，休息區可買當地小點心",
-    "lat": 26.5915,
-    "lng": 127.9685
-  },
-  {
-    "type": "toilet",
-    "name": "古宇利島橋頭公廁",
-    "location": "北部",
-    "note": "過橋後右手邊停車場旁，設備簡單但乾淨",
-    "lat": 26.6940,
-    "lng": 128.0250
+    "note": "公廁24H開放。土產與熱食約08:30-19:00。國道58號與高速公路交匯之首要休息區。",
+    "lat": 26.552192,
+    "lng": 127.970496
   },
   {
     "type": "convenience",
     "name": "Lawson 古宇利大橋前",
     "location": "北部",
-    "note": "買水、小點心很方便，也有洗手間",
-    "lat": 26.6785,
-    "lng": 128.0180
-  },
-  {
-    "type": "convenience",
-    "name": "FamilyMart 許田IC附近",
-    "location": "北部",
-    "note": "下高速後第一間便利店，適合補給飲料零食",
-    "lat": 26.5880,
-    "lng": 127.9700
-  },
-  {
-    "type": "toilet",
-    "name": "美麗海水族館 多功能洗手間",
-    "location": "北部",
-    "note": "園區內多處設有親子廁所，B1與1F最方便",
-    "lat": 26.6944,
-    "lng": 127.8778
-  },
-  {
-    "type": "nursing",
-    "name": "美麗海水族館 哺乳室",
-    "location": "北部",
-    "note": "位在1F大廳旁，有熱水、尿布台",
-    "lat": 26.6944,
-    "lng": 127.8778
-  },
-  {
-    "type": "nursing",
-    "name": "沖繩兒童王國 哺乳室",
-    "location": "中部",
-    "note": "位在入口處遊客中心，有空調和舒適座椅",
-    "lat": 26.3340,
-    "lng": 127.8050
-  },
-  {
-    "type": "toilet",
-    "name": "沖繩兒童王國 親子廁所",
-    "location": "中部",
-    "note": "園區內有3處親子廁所，觸摸廣場旁最近",
-    "lat": 26.3340,
-    "lng": 127.8050
-  },
-  {
-    "type": "convenience",
-    "name": "FamilyMart AEON北谷旁",
-    "location": "中部",
-    "note": "大推炸雞，可順便買濕紙巾和防蚊液",
-    "lat": 26.3260,
-    "lng": 127.7640
-  },
-  {
-    "type": "convenience",
-    "name": "Lawson 北谷美國村前",
-    "location": "中部",
-    "note": "美國村停車場對面，深夜也營業",
-    "lat": 26.3270,
-    "lng": 127.7620
-  },
-  {
-    "type": "nursing",
-    "name": "AEON MALL 北谷 哺乳室",
-    "location": "中部",
-    "note": "2F 兒童用品區旁，設備完善",
-    "lat": 26.3255,
-    "lng": 127.7650
+    "note": "24H營業。入島前最後微型物流防線，急購幼童用水與尿布之關鍵節點。",
+    "lat": 26.671080,
+    "lng": 128.006240
   },
   {
     "type": "gas_station",
-    "name": "ENEOS おもろまち (還車前)",
+    "name": "出光 名護東江 SS",
+    "location": "北部",
+    "note": "國道58號前往本部半島主幹道。腹地廣大易進出。",
+    "lat": 26.581230,
+    "lng": 127.983540
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS 名護 Route 58",
+    "location": "北部",
+    "note": "名護市區油料補給點。",
+    "lat": 26.595410,
+    "lng": 127.974220
+  },
+  {
+    "type": "convenience",
+    "name": "FamilyMart 北谷美濱店",
+    "location": "中部",
+    "note": "24H營業。美國村商圈外圍主幹道路口，車輛易於臨停。",
+    "lat": 26.315020,
+    "lng": 127.759310
+  },
+  {
+    "type": "convenience",
+    "name": "Lawson 北谷美濱二丁目",
+    "location": "中部",
+    "note": "24H營業。緊鄰Depot Island後方，適合已停車之步行旅客補給。",
+    "lat": 26.318760,
+    "lng": 127.757120
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS 北谷美濱 SS",
+    "location": "中部",
+    "note": "24H自助。國道58號南下離開美國村之首選。",
+    "lat": 26.313150,
+    "lng": 127.759880
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS 沖繩南 IC 旁",
+    "location": "中部",
+    "note": "24H自助。進入沖繩自動車道前確保油位，解除里程焦慮。",
+    "lat": 26.334520,
+    "lng": 127.801210
+  },
+  {
+    "type": "convenience",
+    "name": "Lawson 首里城前店",
     "location": "那霸",
-    "note": "還車前最後加滿油 (滿タン返し)，從美國村過來約30分車程",
-    "lat": 26.2245,
-    "lng": 127.6950,
+    "note": "24H營業。彌補首里城夜間公廁關閉之空缺，山丘地形上穩定的補給源。",
+    "lat": 26.218540,
+    "lng": 127.717120
+  },
+  {
+    "type": "gas_station",
+    "name": "ENEOS おもろまち (滿油還車區)",
+    "location": "那霸",
+    "note": "24H營業。座標極其精確，避免新都心單行道迷航，還車必備。",
+    "lat": 26.223520,
+    "lng": 127.697680,
     "hideOnDay": 4
   },
   {
-    "type": "gas_station",
-    "name": "出光 SS 58號線名護方向",
-    "location": "北部",
-    "note": "北部跑完回程路上可加油，靠58號國道旁",
-    "lat": 26.5800,
-    "lng": 127.9650
+    "type": "convenience",
+    "name": "FamilyMart 牧志站前",
+    "location": "那霸",
+    "note": "24H營業。結合單軌車站公廁的複合補給網，無車旅客急救站。",
+    "lat": 26.217850,
+    "lng": 127.693240
   },
   {
-    "type": "gas_station",
-    "name": "ENEOS 北谷國道58附近",
-    "location": "中部",
-    "note": "中部行程結束後順路可加，離AEON北谷約5分車程",
-    "lat": 26.3350,
-    "lng": 127.7700
+    "type": "convenience",
+    "name": "Lawson Omoromachi 站前",
+    "location": "那霸",
+    "note": "24H營業。便於搭乘單軌交通樞紐前最後採買。",
+    "lat": 26.222410,
+    "lng": 127.698330
   }
 ]
